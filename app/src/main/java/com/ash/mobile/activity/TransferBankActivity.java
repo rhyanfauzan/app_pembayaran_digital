@@ -91,7 +91,7 @@ public class TransferBankActivity extends AppCompatActivity {
             });
             dialog.show();
         } else {
-            webView.loadUrl("https://app.liveash.my.id/member/tagihan-pembayaran");
+            webView.loadUrl("https://app.liveash.my.id/member/transfer-bank");
         }
 
         back.setOnClickListener(new View.OnClickListener() {

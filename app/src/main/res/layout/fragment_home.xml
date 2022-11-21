@@ -85,17 +85,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/header"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="@dimen/spacing_xxlarge"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         app:flexWrap="nowrap"
-        app:justifyContent="space_between">
+        app:justifyContent="flex_start"
+        >
 
         <LinearLayout
             android:id="@+id/transferbank"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -117,36 +119,37 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/redeemvoucher"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/redeemvoucher"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
 
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="@dimen/spacing_small"
-                app:srcCompat="@drawable/coupon"
-                app:tint="@android:color/white" />
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginTop="@dimen/spacing_small"-->
+<!--                app:srcCompat="@drawable/coupon"-->
+<!--                app:tint="@android:color/white" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Voucher"
-                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                android:textColor="@android:color/white"
-                app:fontFamily="sans-serif-medium" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Voucher"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Caption"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                app:fontFamily="sans-serif-medium" />-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
         <LinearLayout
             android:id="@+id/kirimsaldo_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_marginRight="14dp"
             android:orientation="vertical">
 
             <ImageView
@@ -171,6 +174,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_marginRight="14dp"
             android:orientation="vertical">
 
 

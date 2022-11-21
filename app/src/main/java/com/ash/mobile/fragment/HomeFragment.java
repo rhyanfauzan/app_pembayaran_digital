@@ -173,7 +173,7 @@ public class HomeFragment extends Fragment {
         paketdatabtn = getView.findViewById(R.id.paketdata);
         tfpulsabtn = getView.findViewById(R.id.tfpulsa);
         pesan = getView.findViewById(R.id.pesan);
-        redeemvoucher = getView.findViewById(R.id.redeemvoucher);
+//        redeemvoucher = getView.findViewById(R.id.redeemvoucher);
         kirimsaldo_home = getView.findViewById(R.id.kirimsaldo_home);
 //        bonusreferal_home = getView.findViewById(R.id.bonusreferal_home);
         transferbank = getView.findViewById(R.id.transferbank);
@@ -270,13 +270,13 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        redeemvoucher.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), RedeemActivity.class);
-                startActivity(intent);
-            }
-        });
+//        redeemvoucher.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getActivity(), RedeemActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 //        bonusreferal_home.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
