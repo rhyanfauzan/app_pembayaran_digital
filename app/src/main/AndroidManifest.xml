@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ash.mobile">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SansPay">
+        <activity android:name="com.ash.mobile.activity.VoucherTvActivity"></activity>
+        <activity android:name="com.ash.mobile.activity.PaketTelkomselActivity" />
+        <activity android:name="com.ash.mobile.activity.GasNegaraActivity" />
+        <activity android:name="com.ash.mobile.activity.VoucherInternetActivity" />
+        <activity android:name="com.ash.mobile.activity.PulsaPromoActivity" />
+        <activity android:name="com.ash.mobile.activity.PaketTlfonActivity" />
+        <activity android:name="com.ash.mobile.activity.ShopeePayActivity" />
+        <activity android:name="com.ash.mobile.activity.GrabDriverActivity" />
+        <activity android:name="com.ash.mobile.activity.GopayDriverActivity" />
+        <activity android:name="com.ash.mobile.activity.LeasingActivity" />
+        <activity android:name="com.ash.mobile.activity.TelpPascaActivity" />
+        <activity android:name="com.ash.mobile.activity.TelpKabelActivity" />
+        <activity android:name="com.ash.mobile.activity.KeretaApiActivity" />
+        <activity android:name="com.ash.mobile.activity.TelevisiActivity" />
+        <activity android:name="com.ash.mobile.activity.BpjsActivity" />
+        <activity android:name="com.ash.mobile.activity.WifiActivity" />
+        <activity android:name="com.ash.mobile.activity.AsuransiActivity" />
+        <activity android:name="com.ash.mobile.activity.PdamActivity" />
+        <activity android:name="com.ash.mobile.activity.ZakatActivity" />
+        <activity android:name="com.ash.mobile.activity.ETollActivity" />
+        <activity android:name="com.ash.mobile.activity.TransferBankActivity" />
+        <activity android:name="com.ash.mobile.activity.KirimSaldoActivity" />
+        <activity android:name="com.ash.mobile.activity.SignupActivity" />
+        <activity
+            android:name="com.ash.mobile.activity.OnboardingActivity"
+            android:noHistory="true" />
+        <activity android:name="com.ash.mobile.activity.PesanActivity" />
+        <activity android:name="com.ash.mobile.activity.LoginActivity" />
+        <activity android:name="com.ash.mobile.activity.LogoutActivity" />
+        <activity android:name="com.ash.mobile.activity.BonusActivity" />
+        <activity android:name="com.ash.mobile.activity.MembershipActivity" />
+        <activity android:name="com.ash.mobile.activity.MutasiActivity" />
+        <activity android:name="com.ash.mobile.activity.RedeemActivity" />
+        <activity android:name="com.ash.mobile.activity.ReferalActivity" />
+        <activity android:name="com.ash.mobile.activity.TagihanActivity" />
+        <activity android:name="com.ash.mobile.activity.GooglePlayActivity" />
+        <activity android:name="com.ash.mobile.activity.LayananTvActivity" />
+        <activity android:name="com.ash.mobile.activity.PlnActivity" />
+        <activity android:name="com.ash.mobile.activity.WifiIdActivity" />
+        <activity android:name="com.ash.mobile.activity.VoucherGameActivity" />
+        <activity android:name="com.ash.mobile.activity.EwalletActivity" />
+        <activity android:name="com.ash.mobile.activity.TransferPulsaActivity" />
+        <activity android:name="com.ash.mobile.activity.SmsPaketActivity" />
+        <activity android:name="com.ash.mobile.activity.TokenListrikActivity" />
+        <activity
+            android:name="com.ash.mobile.activity.SpashScreen"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:hardwareAccelerated="false"
+                    android:largeHeap="true" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.ash.mobile.utilities.MyServices"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.ash.mobile.activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.ash.mobile.activity.PulsaActivity" />
+        <activity android:name="com.ash.mobile.activity.PaketDataActivity" />
+        <activity android:name="com.ash.mobile.activity.LainLain" />
+    </application>
+
+</manifest>

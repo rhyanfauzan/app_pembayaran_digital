@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EAE7E7">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_header2"
+         />
+
+    <LinearLayout
+        android:id="@+id/header_asset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_xxxlarge"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/spacing_large"
+        android:paddingRight="@dimen/spacing_large">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            app:tint="@android:color/white"
+            app:srcCompat="@drawable/logo" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/proxy_light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pesan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:tint="@android:color/white"
+                app:srcCompat="@drawable/help" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bantuan"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/itemtambahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/spacing_xxlarge"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        app:flexWrap="nowrap"
+        app:justifyContent="space_between">
+
+        <LinearLayout
+            android:id="@+id/transferbank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:padding="2dp"
+                app:srcCompat="@drawable/transfer"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer Bank"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@android:color/white"
+                app:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/redeemvoucher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/spacing_small"
+                app:srcCompat="@drawable/coupon"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voucher"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@android:color/white"
+                app:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kirimsaldo_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/spacing_small"
+                app:srcCompat="@drawable/transfer"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kirim Saldo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@android:color/white"
+                app:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tagihan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/spacing_small"
+                app:srcCompat="@drawable/tagihan"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tagihan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@android:color/white"
+                app:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/itemtambahan"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="55dp"
+        android:fillViewport="true"
+        android:maxWidth="100dp"
+        android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/promocardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="3dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@color/colorPrimary" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/proxy_bold"
+                                        android:text="Prabayar"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                        android:textColor="#353535"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/status_server"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:fontFamily="@font/proxy_bold"
+                                    android:textColor="#5A95F6"
+                                    android:textSize="15dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:flexWrap="nowrap"
+                            app:justifyContent="space_between">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/pulsa"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/imgpulsa"
+                                                app:srcCompat="@drawable/pulsa"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                 />
+
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/medium"
+                                            android:text="Pulsa"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/paketdata"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/paket_data"
+                                                app:srcCompat="@drawable/paket_data"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/medium"
+                                            android:text="Paket Data"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/pakettelfon"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/paket_telfon"
+                                                app:srcCompat="@drawable/paket_telfon"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/medium"
+                                            android:text="Paket Telfon"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/tfpulsa"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/pulsa_transfer"
+                                                app:srcCompat="@drawable/pulsa_transfer"
+                                                 />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/medium"
+                                            android:gravity="center"
+                                            android:text="Transfer Pulsa"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/pulsapromo"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_pulsapromo"
+                                                app:srcCompat="@drawable/pulsa_promo"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"/>
+
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/medium"
+                                            android:text="Pulsa Promo"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/paketsms"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_paketsms"
+                                                app:srcCompat="@drawable/paket_sms"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                />
+
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/medium"
+                                            android:text="Paket Sms"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/tokenlistrik"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_tokenlistrik"
+                                                app:srcCompat="@drawable/token"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/medium"
+                                            android:text="Token Listrik"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/menulainnya"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/ic_lainnya"
+                                            app:srcCompat="@drawable/menu"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/medium"
+                                            android:text="Lainnya"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proxy_bold"
+                            android:text="Saldo Gratis..!!"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proxy_light"
+                            android:text="masukkan kode vouchernya disini..!!"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textpromo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/proxy_light"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/slide_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp" />
+
+                    <include
+                        android:id="@+id/llBanner"
+                        layout="@layout/layout_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_large">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="3dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/colorPrimary" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/proxy_bold"
+                                    android:text="Pascabayar"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="#353535"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:fontFamily="@font/proxy_bold"
+                                    android:textColor="#66BB6A"
+                                    android:textSize="15dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_mxlarge"
+                            app:flexWrap="nowrap"
+                            app:justifyContent="space_between">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/asuransi"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_asuransi"
+                                                app:srcCompat="@drawable/asuransi"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/proxy_bold"
+                                            android:text="Asuransi"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/wifiid"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_wifiid"
+                                                app:srcCompat="@drawable/wifiid"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/proxy_bold"
+                                            android:text="Wifi.id"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/bpjs"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_bpjs"
+                                                app:srcCompat="@drawable/bpjs"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/proxy_bold"
+                                            android:text="BPJS"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/pln"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_pln"
+                                                app:srcCompat="@drawable/pln"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                 />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/proxy_bold"
+                                            android:text="PLN"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/gopaydriver"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_gojek"
+                                                app:srcCompat="@drawable/gojek"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/proxy_bold"
+                                            android:text="Gojek Driver"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/pdam"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_pdam"
+                                                app:srcCompat="@drawable/pdam"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/proxy_bold"
+                                            android:text="PDAM"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/wifi"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_wifi"
+                                                app:srcCompat="@drawable/wifi"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                 />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/proxy_bold"
+                                            android:text="Wifi"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/shopeepay"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+                                            <ImageView
+                                                android:id="@+id/ic_shopeepay"
+                                                app:srcCompat="@drawable/shopee"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                />
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/proxy_bold"
+                                            android:text="Shopee Pay"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/blue_grey_900" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </com.google.android.flexbox.FlexboxLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="sample_images">
+        <item>@drawable/image_7</item>
+    </integer-array>
+
+    <string-array name="sample_images_name">
+        <item>Night Street</item>
+        <item>Architect Desk</item>
+        <item>City Building</item>
+        <item>Computer Keyboard</item>
+        <item>Grunge Window</item>
+
+        <item>Park Bench</item>
+        <item>Table Cocktails</item>
+        <item>Side Park</item>
+        <item>Hanging Clothes</item>
+        <item>Coffee Camera</item>
+
+        <item>Morning Flower</item>
+        <item>Foggy Hill</item>
+        <item>The Backpacker</item>
+        <item>River Forest</item>
+        <item>Mist Mountain</item>
+    </string-array>
+
+    <string-array name="general_date">
+        <item>05 Dec 2015</item>
+        <item>22 Apr 2013</item>
+        <item>14 Sep 2015</item>
+        <item>11 Feb 2015</item>
+        <item>29 Aug 2014</item>
+        <item>10 Nov 2015</item>
+        <item>23 Jun 2015</item>
+        <item>20 Jul 2015</item>
+        <item>09 Mar 2015</item>
+        <item>01 Jan 2016</item>
+    </string-array>
+</resources>

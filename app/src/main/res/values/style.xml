@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#38B6FF</item>
+        <item name="colorPrimaryDark">#38B6FF</item>
+        <item name="colorAccent">#38B6FF</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <style name="SPlash" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#38B6FF</item>
+        <item name="colorPrimaryDark">#38B6FF</item>
+        <item name="colorAccent">#38B6FF</item>
+    </style>
+
+    <style name="Theme.SansPay" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextNavigation">
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/proxy_bold</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#38B6FF</item>
+        <item name="colorPrimaryDark">#38B6FF</item>
+        <item name="colorAccent">#38B6FF</item>
+    </style>
+    <style name="RippleStyleBlack" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">#8096989A</item>
+    </style>
+    <style name="RippleStyleWhite">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#80FFFFFF</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="TransparentStatusBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "153538900578",
+    "project_id": "muslimpay-9d40a",
+    "storage_bucket": "muslimpay-9d40a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153538900578:android:d6613d84e92053b0c7173b",
+        "android_client_info": {
+          "package_name": "com.ash.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153538900578-l0uce3ale5t21okjrgqs3ecvqa2j9189.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSuFfLEMzeqx8ey8nPh74oTa82hNkRB0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153538900578-l0uce3ale5t21okjrgqs3ecvqa2j9189.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
